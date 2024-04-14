@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="646.0" style="-fx-background-color: #d0fc84;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zoo.TicketController">
+    <children>
+        <TableView fx:id="ticketTable" layoutX="28.0" layoutY="69.0" prefHeight="278.0" prefWidth="596.0">
+            <columns>
+                <TableColumn fx:id="tidColumn" prefWidth="103.19997787475586" text="TID" />
+                <TableColumn fx:id="categoryColumn" prefWidth="219.20008850097656" text="Category" />
+                <TableColumn fx:id="priceColumn" prefWidth="124.800048828125" text="Price" />
+                <TableColumn fx:id="environmentColumn" prefWidth="150.39996337890625" text="Environment" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="ticketComboBox1" layoutX="28.0" layoutY="29.0" prefHeight="26.0" prefWidth="126.0" />
+        <ComboBox fx:id="ticketComboBox2" layoutX="170.0" layoutY="29.0" prefHeight="26.0" prefWidth="158.0" />
+        <Button layoutX="348.0" layoutY="29.0" mnemonicParsing="false" onAction="#onAddTicketClick" text="Add ticket to cart" />
+        <Button layoutX="473.0" layoutY="28.0" mnemonicParsing="false" onAction="#onDeleteTicketClick" prefHeight="26.0" prefWidth="150.0" text="Delete ticket from cart" />
+        <Button fx:id="buttonb" layoutX="587.0" layoutY="361.0" mnemonicParsing="false" onAction="#onButtonbClick" text="Back" />
+      <Label fx:id="labelt" layoutX="28.0" layoutY="360.0" prefHeight="27.0" prefWidth="544.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

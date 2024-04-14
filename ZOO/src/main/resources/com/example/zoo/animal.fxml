@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="659.0" prefWidth="871.0" style="-fx-background-color: #97fad7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zoo.AnimalController">
+    <children>
+        <TableView fx:id="animalTable" layoutX="28.0" layoutY="69.0" prefHeight="286.0" prefWidth="814.0">
+            <columns>
+                <TableColumn fx:id="aidColumn" prefWidth="71.20000839233398" text="AID" />
+                <TableColumn fx:id="nameColumn" prefWidth="143.99996948242188" text="Name" />
+                <TableColumn fx:id="ageColumn" prefWidth="92.00001525878906" text="Age" />
+                <TableColumn fx:id="colorColumn" prefWidth="128.79998779296875" text="Color" />
+                <TableColumn fx:id="weightColumn" prefWidth="112.79998779296875" text="Weight" />
+                <TableColumn fx:id="speciesColumn" prefWidth="129.5999755859375" text="Species" />
+                <TableColumn fx:id="environmentColumn" prefWidth="141.5999755859375" text="Environment" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="animalComboBox" layoutX="28.0" layoutY="29.0" prefWidth="150.0" />
+        <Button fx:id="buttonb" layoutX="816.0" layoutY="619.0" mnemonicParsing="false" onAction="#onButtonbClick" text="Back" />
+      <Button fx:id="buttonsee" layoutX="223.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonSeeClick" text="See" />
+      <Label fx:id="labela" layoutX="56.0" layoutY="390.0" prefHeight="247.0" prefWidth="354.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelb" layoutX="451.0" layoutY="390.0" prefHeight="247.0" prefWidth="354.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #99ddfc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zoo.ReviewController">
+   <children>
+      <TextArea fx:id="feedback" layoutX="30.0" layoutY="85.0" prefHeight="205.0" prefWidth="542.0" />
+      <Label fx:id="l1" layoutX="30.0" layoutY="21.0" prefHeight="50.0" prefWidth="542.0" text="Please give a feedback for your visit. (no more than 100 characters)" textFill="#690ad7">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="30.0" layoutY="324.0" prefHeight="50.0" prefWidth="370.0" text="Thank you and see you again soon!" textFill="#690ad7">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonb" layoutX="545.0" layoutY="361.0" mnemonicParsing="false" onAction="#onButtonbClick" text="Back" textFill="#000000" />
+      <Button fx:id="buttonsend" layoutX="528.0" layoutY="298.0" mnemonicParsing="false" onAction="#onButtonsendClick" text="Send" textFill="#690ad7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="l3" layoutX="30.0" layoutY="299.0" prefHeight="22.0" prefWidth="166.0" textFill="#e70808">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="finalimage" fitHeight="70.0" fitWidth="83.0" layoutX="410.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/final.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
